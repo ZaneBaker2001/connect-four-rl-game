@@ -1,8 +1,8 @@
 # AlphaZero‑style Connect Four (Self‑Play + MCTS + PyTorch)
 
-Train a Connect Four agent from scratch using **self‑play** and **Monte Carlo Tree Search (PUCT)** with a compact **policy/value ResNet**. Runs on CPU (slow) or GPU (recommended). Includes evaluation vs a minimax baseline, tests, and a simple CLI.
+Trains a Connect Four agent from scratch using **self‑play** and **Monte Carlo Tree Search (PUCT)** with a compact **policy/value ResNet**. Runs on CPU (slow) or GPU (recommended). Includes evaluation vs a minimax baseline, tests, and a simple CLI.
 
----
+
 
 ##  Highlights
 - End‑to‑end **AlphaZero-style** loop: self‑play → training → evaluation.
@@ -11,7 +11,7 @@ Train a Connect Four agent from scratch using **self‑play** and **Monte Carlo 
 - **Minimax** baseline for head‑to‑head evaluation.
 - Clean **CLI** (train/eval/play) + **pytest** smoke tests.
 
----
+
 
 ##  Requirements
 - Python 3.9+
@@ -23,7 +23,7 @@ python -m venv .venv && source .venv/bin/activate  # Windows: .venv\Scripts\acti
 pip install -r requirements.txt
 
 
----
+
 
 ## Project Structure
 ```
@@ -48,7 +48,7 @@ alphazero-c4/
     benchmark_minimax.py
 ```
 
----
+
 
 ##  Quickstart
 
@@ -91,7 +91,7 @@ python -m c4.cli play \
 ```
 Type a column index (0–6) when prompted.
 
----
+
 
 ##  How it works (quick)
 
@@ -112,12 +112,12 @@ Root uses **Dirichlet noise** for exploration during self‑play; **temperature*
 
 **Loss:** `KL(policy_logits, π_visit)` + `λ * MSE(value, z)` (λ=0.5 by default).
 
----
+
 
 ##  Useful knobs
 - **Strength**: increase `--selfplay-games`, `--epochs`, and `--mcts-sims` (train & eval).
 - **Model size**: `--blocks`, `--channels`.
 - **Evaluation**: raise `--minimax-depth` for a tougher baseline.
 
----
+
 
