@@ -18,10 +18,10 @@ Trains a Connect Four agent from scratch using **self‑play** and **Monte Carlo
 - Recommended: CUDA GPU for training speed
 
 Install deps:
-```bash
+```
 python -m venv .venv && source .venv/bin/activate  # Windows: .venv\Scripts\activate
 pip install -r requirements.txt
-
+```
 
 
 
