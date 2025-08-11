@@ -21,15 +21,7 @@ Install deps:
 ```bash
 python -m venv .venv && source .venv/bin/activate  # Windows: .venv\Scripts\activate
 pip install -r requirements.txt
-```
 
-`requirements.txt` (pinned minimal):
-```
-numpy==1.26.4
-torch>=2.1.0
-tqdm>=4.66.0
-matplotlib>=3.8.0
-```
 
 ---
 
