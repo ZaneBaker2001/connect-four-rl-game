@@ -4,7 +4,7 @@ Train a Connect Four agent from scratch using **self‑play** and **Monte Carlo 
 
 ---
 
-## ✨ Highlights
+##  Highlights
 - End‑to‑end **AlphaZero-style** loop: self‑play → training → evaluation.
 - **ResNet‑lite** policy/value network (PyTorch).
 - **PUCT MCTS** with Dirichlet root noise, temperature control.
@@ -13,7 +13,7 @@ Train a Connect Four agent from scratch using **self‑play** and **Monte Carlo 
 
 ---
 
-## 🧰 Requirements
+##  Requirements
 - Python 3.9+
 - Recommended: CUDA GPU for training speed
 
@@ -33,12 +33,12 @@ matplotlib>=3.8.0
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 ```
 alphazero-c4/
   README.md
   requirements.txt
-  c4/
+  connect-four-rl-game/
     __init__.py
     env.py            # bitboard game logic
     net.py            # policy/value ResNet-lite
@@ -58,7 +58,7 @@ alphazero-c4/
 
 ---
 
-## 🚀 Quickstart
+##  Quickstart
 
 ### 1) Run tests
 ```bash
@@ -101,7 +101,7 @@ Type a column index (0–6) when prompted.
 
 ---
 
-## 🧠 How it works (quick)
+##  How it works (quick)
 
 **State encoding:** 2 planes (current player stones, opponent stones) in a 6×7 grid derived from a fast bitboard representation.
 
@@ -122,19 +122,10 @@ Root uses **Dirichlet noise** for exploration during self‑play; **temperature*
 
 ---
 
-## 🔧 Useful knobs
+##  Useful knobs
 - **Strength**: increase `--selfplay-games`, `--epochs`, and `--mcts-sims` (train & eval).
 - **Model size**: `--blocks`, `--channels`.
 - **Evaluation**: raise `--minimax-depth` for a tougher baseline.
 
 ---
 
-## 📊 Tips & Troubleshooting
-- **Slow on CPU?** Start with `--selfplay-games 100 --epochs 3 --mcts-sims 64`.
-- **Stability:** Keep replay capacity large (default 200k). If training diverges, lower LR (`--lr 1e-3`) or reduce value loss scale.
-- **Determinism:** Set global seeds if you need strict reproducibility (NumPy, PyTorch, Python).
-
----
-
-## 📜 License
-This project is provided as‑is for educational and portfolio use.
