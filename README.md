@@ -31,7 +31,6 @@ connect-four-rl-game/
   README.md
   requirements.txt
   src/
-    __init__.py
     env.py            # bitboard game logic
     net.py            # policy/value ResNet-lite
     mcts.py           # PUCT Monte Carlo Tree Search
