@@ -27,10 +27,10 @@ pip install -r requirements.txt
 
 ## Project Structure
 ```
-alphazero-c4/
+connect-four-rl-game/
   README.md
   requirements.txt
-  connect-four-rl-game/
+  src/
     __init__.py
     env.py            # bitboard game logic
     net.py            # policy/value ResNet-lite
