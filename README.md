@@ -58,7 +58,7 @@ pytest -q
 
 ### 2) Train (small demo run)
 ```bash
-python -m c4.cli train \
+python -m src.cli train \
   --runs-dir runs/c4 \
   --epochs 5 \
   --selfplay-games 200 \
