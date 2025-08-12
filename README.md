@@ -71,7 +71,7 @@ python -m c4.cli train \
 
 ### 3) Evaluate vs minimax
 ```bash
-python -m c4.cli evaluate \
+python -m src.cli evaluate \
   --runs-dir runs/c4 \
   --checkpoint best.pt \
   --games 200 \
@@ -82,7 +82,7 @@ Outputs a W/D/L summary.
 
 ### 4) Play against your agent
 ```bash
-python -m c4.cli play \
+python -m src.cli play \
   --runs-dir runs/c4 \
   --checkpoint best.pt \
   --mcts-sims 256 \
