@@ -1,6 +1,6 @@
 # AlphaZero‑style Connect Four (Self‑Play + MCTS + PyTorch)
 
-Trains a Connect Four agent from scratch using **self‑play** and **Monte Carlo Tree Search (MTCS)** with a compact **policy/value ResNet**. Runs on CPU (slow) or GPU (recommended). Includes evaluation vs a minimax baseline, tests, and a simple CLI.
+Trains a Connect Four agent from scratch using **self‑play** and **Monte Carlo Tree Search (MCTS)** with a compact **policy/value ResNet**. Runs on CPU (slow) or GPU (recommended). Includes evaluation vs a minimax baseline, tests, and a simple CLI.
 
 
 
