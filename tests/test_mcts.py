@@ -1,7 +1,7 @@
 import torch
-from c4.env import Connect4
-from c4.net import PolicyValueNet
-from c4.mcts import MCTS
+from src.env import Connect4
+from src.net import PolicyValueNet
+from src.mcts import MCTS
 
 def test_mcts_runs():
     model = PolicyValueNet()
