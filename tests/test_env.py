@@ -1,5 +1,5 @@
 import pytest
-from c4.env import Connect4
+from src.env import Connect4
 
 def test_empty_legal():
     g = Connect4()
