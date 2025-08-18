@@ -1,5 +1,5 @@
-from c4.env import Connect4
-from c4.minimax import best_move
+from src.env import Connect4
+from src.minimax import best_move
 import time
 
 def main():
